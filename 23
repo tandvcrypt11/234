@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="res" readonly>
+<br>
+<button onclick="add('1')">1</button>
+<button onclick="add('2')">2</button>
+<button onclick="add('+')">+</button>
+<button onclick="calc()">=</button>
+
+<script>
+function add(v){res.value+=v;}
+function calc(){res.value=eval(res.value);}
+</script>
+</body>
+</html>
